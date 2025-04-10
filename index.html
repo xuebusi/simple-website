@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="zh">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SwiftUIX</title>
+    <!-- 引入 Bootstrap 5 样式 -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" rel="stylesheet">
+    <style>
+        /* 定义柔和的深蓝色主题 */
+        :root {
+            --primary-color: #003366;
+            --secondary-color: #004c99;
+            --text-color: #333;
+            --light-text-color: #fff;
+            --background-color: #f4f4f9;
+        }
+
+        /* 应用主题颜色 */
+        body {
+            background-color: var(--background-color);
+            color: var(--text-color);
+            font-family: sans-serif;
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+        }
+
+        nav {
+            background-color: var(--primary-color);
+        }
+
+        nav a {
+            color: var(--light-text-color);
+        }
+
+        nav a:hover {
+            color: #e0e0e0;
+        }
+
+        section.bg-cover {
+            background-color: var(--secondary-color);
+            background-blend-mode: multiply;
+        }
+
+        section.bg-cover h1,
+        section.bg-cover p {
+            color: var(--light-text-color);
+        }
+
+        section.bg-cover a {
+            background-color: var(--light-text-color);
+            color: var(--primary-color);
+        }
+
+        section.bg-cover a:hover {
+            background-color: #e0e0e0;
+        }
+
+        footer {
+            background-color: var(--primary-color);
+            color: var(--light-text-color);
+            margin-top: auto;
+        }
+
+        footer a {
+            color: var(--light-text-color);
+        }
+
+        footer a:hover {
+            color: #e0e0e0;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- 导航栏 -->
+    <nav class="navbar navbar-expand-lg navbar-dark px-4 py-2">
+        <div class="container-fluid">
+            <a class="navbar-brand fs-4 fw-bold" href="#">SwiftUIX</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link active" href="index.html">首页</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="about.html">关于我们</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contact.html">联系我们</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 英雄区域 -->
+    <section class="bg-cover"
+        style="background-image: url('images/444-1920x1080.jpg'); background-size: cover; background-position: center;">
+        <div class="container text-center text-light p-5">
+            <h1 class="display-5 fw-bold pt-5 mb-3">欢迎来到 SwiftUIX</h1>
+            <p class="fs-5 mb-8">在这里，你可以发现更多精彩内容。</p>
+            <a href="#" class="rounded-pill btn btn-light py-2 px-4 mb-5">了解更多</a>
+        </div>
+    </section>
+
+    <!-- 特色区域 -->
+    <section class="container py-5">
+        <div class="row row-cols-1 row-cols-md-3 g-5 p-4">
+            <div class="col">
+                <div class="p-6 rounded-lg text-center">
+                    <i class="fa-solid fa-rocket fs-2 mb-4"></i>
+                    <h2 class="fs-4 font-bold mb-2">快速加载</h2>
+                    <p class="text-gray-600">我们的网站加载速度极快，让你无需等待。</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-6 rounded-lg text-center">
+                    <i class="fa-solid fa-shield fs-2 mb-4"></i>
+                    <h2 class="fs-4 font-bold mb-2">安全可靠</h2>
+                    <p class="text-gray-600">采用先进的安全技术，保障你的信息安全。</p>
+                </div>
+            </div>
+            <div class="col">
+                <div class="p-6 rounded-lg text-center">
+                    <i class="fa-solid fa-headset fs-2 mb-4"></i>
+                    <h2 class="fs-4 font-bold mb-2">优质服务</h2>
+                    <p class="text-gray-600">我们提供24/7的优质服务，随时为你解决问题。</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- 页脚 -->
+    <footer>
+        <div class="container text-center py-4">
+            <p>&copy; 2025 SwiftUIX. 保留所有权利.</p>
+            <div>
+                <a href="#"><i class="fa-brands fa-facebook mx-2"></i></a>
+                <a href="#"><i class="fa-brands fa-twitter mx-2"></i></a>
+                <a href="#"><i class="fa-brands fa-instagram mx-2"></i></a>
+            </div>
+        </div>
+    </footer>
+
+    <!-- 引入 Bootstrap 5 JavaScript 文件 -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+
+</html>
